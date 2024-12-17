@@ -56,7 +56,7 @@ class DisciplineTeacher(Teacher):
         return f"{super().add_mark(student, mark)} по Предмету {self.discipline}"
 
     def remove_mark(self, student, mark):
-        return f"{super().remove_mark(student, mark)} Предмет {self.discipline}"
+        return f"{super().remove_mark(student, mark)} по  Предмету {self.discipline}"
 
     def give_a_consultation(self, classwork):
         return f"{super().give_a_consultation(classwork)} Предмет {self.discipline}, Как {self.job_title}"
