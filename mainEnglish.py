@@ -5,7 +5,7 @@ class Teacher:
         self.__last_name = last_name
         self.__education = education
         self.__exp = exp
-
+        Teacher.teaches = (name,last_name)
     @property
     def last_name(self):
         return self.__last_name
@@ -39,6 +39,7 @@ class DisciplineTeacher(Teacher):
         super().__init__(name, last_name, education, exp)
         self.__discipline = discipline
         self.__job_title = job_title
+        Teacher.teaches = (name, last_name)
 
     @property
     def discipline(self):
