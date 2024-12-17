@@ -53,7 +53,7 @@ class DisciplineTeacher(Teacher):
         return f"{super().get_teacher_data()}, Предмет {self.discipline}, Должность {self.job_title}"
 
     def add_mark(self, student, mark):
-        return f"{super().add_mark(student, mark)} Предмет {self.discipline}"
+        return f"{super().add_mark(student, mark)} по Предмету {self.discipline}"
 
     def remove_mark(self, student, mark):
         return f"{super().remove_mark(student, mark)} Предмет {self.discipline}"
