@@ -34,3 +34,4 @@ def test_remove_mark(test_teacher):
 def test_give_a_consultation(test_teacher):
    assert test_teacher.give_a_consultation("test_class") == "Антон Алексеевич провел консультацию в классе test_class"
 
+
