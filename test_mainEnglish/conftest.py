@@ -5,10 +5,10 @@ from mainEnglish import Teacher, DisciplineTeacher
 
 @pytest.fixture
 def test_teacher():
-    teacher = Teacher( "Антон","Алексеевич","Математика","3 года")
+    teacher = Teacher( "Антон","Алексеевич","высшее","3 года")
     return teacher
 
 @pytest.fixture
-def test_dicp_teacher():
-    disp_teach = DisciplineTeacher("Антон","Алексеевич","Математика","3 года","математика","завуч")
+def test_disp_teacher():
+    disp_teach = DisciplineTeacher("Василий","Иванович","бакалавр","3 года","Изо","завуч")
     return disp_teach
